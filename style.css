@@ -1,0 +1,149 @@
+/* body */
+body {
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  margin: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* header */
+header {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.huddle-logo {
+  width: 200px;
+  height: auto;
+}
+
+/* main */
+main {
+  display: flex;
+  gap: 1rem;
+}
+
+.mockups {
+  width: 100%;
+  display: 1 1 50%;
+}
+
+/* main: article */
+article {
+  display: 1 1 50%;
+}
+
+.h2-article {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.p-article {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1rem;
+}
+
+/* main: register-button */
+.register-button {
+  font-family: "Poppins", sans-serif;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  cursor: pointer;
+}
+
+.register-button:active {
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+
+/* footer */
+footer {
+  padding-top: 25px;
+}
+
+/* footer: social media icon */
+.socialmedia-icon {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
+}
+
+.socialmedia-icon svg {
+  fill: white;
+}
+
+.socialmedia-icon svg:hover {
+  fill: hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+/* footer: attribution */
+.attribution {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.attribution a {
+  color: #0000ff;
+}
+
+.attribution a:active {
+  color: hsl(300, 69%, 71%);
+}
+
+/* @media queries */
+@media (max-width: 1028px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+  }
+
+  .huddle-logo {
+    width: 200px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  article {
+    text-align: center;
+  }
+
+  .register-button {
+    width: 240px;
+  }
+
+  .socialmedia-icon {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .socialmedia-icon svg {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 760px) {
+  .huddle-logo {
+    width: 175px;
+  }
+}
+
+@media (max-width: 500px) {
+  .huddle-logo {
+    width: 150px;
+  }
+}
